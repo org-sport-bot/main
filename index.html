@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@org_sport_bot — Sports Activity & Payment Tracker</title>
+  <meta name="description" content="Manage sports activities, track participants, and calculate balances directly in Telegram. Lightweight, private, and straightforward.">
+  <meta property="og:title" content="@org_sport_bot — Sports Activity Tracker">
+  <meta property="og:description" content="Track attendance, split costs, and view payment reports inside Telegram.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #0ea5e9;
+      --accent-hover: #0284c7;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --radius: 10px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header { text-align: center; padding: 60px 0 40px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); margin-bottom: 12px; font-weight: 700; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: clamp(1rem, 3vw, 1.15rem); max-width: 600px; margin: 0 auto 28px; }
+
+    /* Universal Button */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--accent); color: #fff; padding: 14px 28px;
+      border-radius: var(--radius); text-decoration: none; font-weight: 600; font-size: 1rem;
+      transition: all 0.2s ease; box-shadow: var(--shadow);
+      border: none; cursor: pointer;
+    }
+    .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+
+    /* Sections */
+    section { padding: 32px 0; }
+    h2 { font-size: 1.4rem; margin-bottom: 20px; text-align: center; font-weight: 600; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow);
+    }
+    .card h3 { margin-bottom: 6px; font-size: 1.05rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    .steps { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 12px; }
+    .step {
+      flex: 1 1 220px; background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px; text-align: center;
+    }
+    .step span { display: block; font-size: 1.8rem; margin-bottom: 6px; }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: #fff7ed; border: 1px solid #fed7aa; border-radius: var(--radius);
+      padding: 16px 20px; margin: 24px 0; font-size: 0.9rem; color: #9a3412; line-height: 1.5;
+    }
+    .disclaimer strong { display: block; margin-bottom: 6px; color: #c2410c; }
+    .disclaimer ul { padding-left: 18px; margin-top: 6px; }
+    .disclaimer li { margin-bottom: 4px; }
+
+    /* Support */
+    .support {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px; text-align: center; margin: 24px 0;
+    }
+    .support p { margin-bottom: 12px; }
+    .support .btn { margin-top: 8px; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 32px 0 40px; color: var(--muted);
+      font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 24px;
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      header { padding: 40px 0 24px; }
+      .btn { width: 100%; }
+      .step { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>@org_sport_bot</h1>
+      <p class="subtitle">Track activities, manage participants, and monitor payments — all inside Telegram. No schedules, no reminders, just the essentials.</p>
+      <a href="https://t.me/org_sport_bot" class="btn" target="_blank" rel="noopener">▶ Launch @org_sport_bot</a>
+    </header>
+
+    <section>
+      <h2>What It Does</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>📋 Activity Tracking</h3>
+          <p>Create sports events, set fixed or per-person costs, and log attendance. Simple, text-based records.</p>
+        </div>
+        <div class="card">
+          <h3>👥 Participant Management</h3>
+          <p>Add players via Telegram username. Mark attendance instantly and keep a clean roster.</p>
+        </div>
+        <div class="card">
+          <h3>⚖ Balance & Payments</h3>
+          <p>Auto-calculate who owes what. Track income/expenses per activity or per participant.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Plain-Text Reports</h3>
+          <p>Generate formatted Markdown reports for any period. Ready to copy-paste, no dashboards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to Start</h2>
+      <div class="steps">
+        <div class="step"><span>1️⃣</span>Open Telegram & find <strong>@org_sport_bot</strong></div>
+        <div class="step"><span>2️⃣</span>Tap <strong>/start</strong> & choose your role</div>
+        <div class="step"><span>3️⃣</span>Create an activity or register as a participant</div>
+      </div>
+    </section>
+
+    <div class="disclaimer">
+      <strong>⚠️ Important Notice</strong>
+      <ul>
+        <li>Do not share personal data (phone, email, ID numbers) — the bot is not designed for PII storage.</li>
+        <li>All data is provided <b>"as is"</b>. No backups, no recovery, and no liability for data loss.</li>
+        <li>Use at your own risk. This is a lightweight utility, not a certified accounting system.</li>
+      </ul>
+    </div>
+
+    <section class="support">
+      <h2>Technical Support</h2>
+      <p>Support is provided <strong>directly inside the bot</strong>.</p>
+      <p>Send <code>/help</code> or reply to any message with your question.<br>
+      Typical response time: <strong>under 2 hours</strong>.</p>
+      <a href="https://t.me/org_sport_bot" class="btn" target="_blank" rel="noopener">💬 Open Bot for Support</a>
+    </section>
+
+    <footer>
+      © 2026 <a href="https://t.me/org_sport_bot" style="color:var(--accent);text-decoration:none;">@org_sport_bot</a> built for coaches, captains, and sports clubs.
+    </footer>
+  </div>
+</body>
+</html>

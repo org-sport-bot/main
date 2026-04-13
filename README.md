@@ -13,6 +13,7 @@
 - 📦 All data is provided **"as is"**. No backups, no recovery, and no liability for data loss.
 - ⚖️ Use at your own risk. This is a lightweight utility, not a certified accounting system.
 - 🌍 **Compliance with local laws**: The developer makes no representations or warranties regarding compliance with laws in any jurisdiction. You acknowledge that you are using the bot voluntarily and assume all risks and responsibilities for ensuring that your use, and the data you process through the bot, complies with all applicable national, regional, and local laws, regulations, and professional standards.
+- 🌍 **GDPR / CCPA Notice**: If you are subject to GDPR, CCPA, or similar data protection regulations, you act as the sole Data Controller for any personal information processed via this bot. The developer provides this tool only and does not collect, store, or process your data on your behalf. You are fully responsible for ensuring lawful processing, obtaining necessary consents, and fulfilling all applicable privacy obligations.
 
 ---
 

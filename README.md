@@ -12,6 +12,7 @@
 - 🔐 **Do not share personal data** (phone, email, ID numbers) — the bot is not designed for PII storage.
 - 📦 All data is provided **"as is"**. No backups, no recovery, and no liability for data loss.
 - ⚖️ Use at your own risk. This is a lightweight utility, not a certified accounting system.
+- 🌍 **Compliance with local laws**: The developer makes no representations or warranties regarding compliance with laws in any jurisdiction. You acknowledge that you are using the bot voluntarily and assume all risks and responsibilities for ensuring that your use, and the data you process through the bot, complies with all applicable national, regional, and local laws, regulations, and professional standards.
 
 ---
 
